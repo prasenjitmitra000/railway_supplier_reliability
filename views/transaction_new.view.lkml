@@ -2,7 +2,7 @@ view: transaction_new {
   derived_table: {
     sql: select ABC_Indicator,
       Commodity_cd,
-      lead_time_days Lead_Time_Variance,
+      Lead_Time_Variance,
       #Mat_Product_Num,
       Movement_Type,
       #OTIF,
@@ -42,7 +42,7 @@ view: transaction_new {
       incoterms_part1,
       net_price_curr,
       #pdsll_item_delivery_dt,
-      item_delivery_dt pdsll_item_delivery_dt,
+      pdsll_item_delivery_dt,
       #pdsll_mat_grp_cd,
       predicted_OTIF.scores[offset(0)] o_scores,
       predicted_OTIF.scores[offset(1)] l_scores,
