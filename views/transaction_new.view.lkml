@@ -55,7 +55,7 @@ view: transaction_new {
       purch_order_quan,
       vendor_num,
       row_number() OVER(ORDER BY purch_doc_dt) AS prim_key
-      from `mi-4-305707.cswg_cust_reliability.predictions_2022_10_09T05_30_48_018Z_351`
+      from `mi-4-305707.railway_supplier_reliability.predictions_2022_09_21T01_12_44_960Z_685`
        ;;
   }
 
