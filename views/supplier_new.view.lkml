@@ -41,7 +41,7 @@ view: supplier_new {
     sql: ${TABLE}.supplier_name ;;
     link: {
       label: "{{ value }}"
-      url: "https://tataconsultingservices.looker.com/dashboards/397?Supplier={{ value }}"
+      url: "https://tataconsultingservices.looker.com/dashboards/449?Supplier={{ value }}"
     }
   }
   dimension: supplier_num {

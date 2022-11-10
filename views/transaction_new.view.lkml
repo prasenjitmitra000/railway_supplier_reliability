@@ -322,7 +322,7 @@ view: transaction_new {
       year
     ]
     datatype: datetime
-    sql:  safe.PARSE_DATE('%Y-%m-%d',  ${TABLE}.pdsll_item_delivery_dt);;
+    sql:  safe.PARSE_DATE('%d-%m-%Y',  ${TABLE}.pdsll_item_delivery_dt);;
   }
 
   #dimension: pdsll_mat_grp_cd {
@@ -356,9 +356,9 @@ view: transaction_new {
     sql: cast(${TABLE}.l_scores as FLOAT64);;
     value_format_name: percent_0
     html: {% if l_scores._value >= delay_probability._value  %}
-          <p style="background-color:#CD5C5C;text-align:right;padding-right:5px;" >{{rendered_value}}</p>
+          <p style="background-color:#FFCCCB;text-align:right;padding-right:5px;" >{{rendered_value}}</p>
           {% else %}
-          <p style="background-color:green;text-align:right;padding-right:5px;" >{{rendered_value}}</p>
+          <p style="background-color:#90EE90;text-align:right;padding-right:5px;" >{{rendered_value}}</p>
           {% endif %}
           ;;
 
