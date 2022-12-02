@@ -27,4 +27,5 @@ explore: transaction_new {
     sql_on: ${transaction_new.plant_cd}=${railway_regions.store_cd}  ;;
     relationship: one_to_many
   }
+
 }
